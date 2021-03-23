@@ -56,12 +56,6 @@ func AddText(res http.ResponseWriter, req *http.Request) {
 		tableQuery = "INSERT INTO nonspam (sentence) VALUES ($1)"
 	}
 
-	// if isSpam {
-	// 	tableQuery = "spam"
-	// } else {
-	// 	tableQuery = "nonSpam"
-	// }
-
 	qr, err := db.Exec(tableQuery, text)
 	if err != nil {
 		fmt.Println("error di query")
