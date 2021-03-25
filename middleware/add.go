@@ -63,3 +63,7 @@ func AddText(res http.ResponseWriter, req *http.Request) {
 	}
 	fmt.Println("Query result: ", qr)
 }
+
+func DetectText(res http.ResponseWriter, req *http.Request) {
+
+}
